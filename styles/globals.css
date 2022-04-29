@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap');
+
+@layer base {
+  body {
+    @apply font-body bg-black scrollbar-hide;
+    font-family: 'Expletus Sans', cursive;    box-sizing: border-box;
+    background-image: 
+     url("https://s7.gifyu.com/images/synthback.gif");
+     background-size: "cover";
+     height: 100vh;
+     background-size: cover;
+     width: 100%;
+     background-repeat: no-repeat center center fixed;
+}
+  gap: 5rem;
+  img {
+    height: 20vh;
+  
+  }
+.dingo{
+  background-color: black;
+  opacity: 95%;
+}
+
+.supla{
+  background-color: black;
+  opacity: 95%;
+}
+}
+
+@layer components {
+  .sidebarIcon {
+    @apply h-6 text-[#808080] cursor-pointer;
+  }
+
+  .tag {
+    @apply py-1.5 px-3 text-[#CECECE] bg-[#282828] rounded-xl text-xs font-bold border-2 border-[#484848];
+  }
+
+  .genre {
+    @apply bg-[#101010] text-[#CECECE] border border-[#484848] rounded-xl py-2.5 px-3.5 text-[11px] font-bold cursor-default;
+  }
+
+  .icon {
+    @apply hover:scale-125 transition-all duration-150 ease-out;
+  }
+
+  .croppedIcon {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  .playerIcon {
+    @apply transition ease-out transform hover:scale-105 hover:text-white;
+  }
+}
